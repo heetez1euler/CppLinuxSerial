@@ -1,12 +1,13 @@
 cmake_minimum_required(VERSION 3.1.0)
 project(CppLinuxSerial)
 
-add_definitions(-std=c++14)
-set(CMAKE_CXX_STANDARD 14)
+add_definitions(-std=c++17)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 option(BUILD_TESTS "If set to true, unit tests will be build as part of make all." TRUE)
+set(BUILD_TESTS FALSE)
 if (BUILD_TESTS)
     message("BUILD_TESTS=TRUE, unit tests will be built.")
 else ()
